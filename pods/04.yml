@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample05
+spec:
+  containers:
+    - name: health
+      image: ml1113/health-demo:latest
+      imagePullPolicy: Always  
