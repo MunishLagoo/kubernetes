@@ -9,3 +9,24 @@ spec:
      env:
       - name: URL
         value: example.com
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config1
+data:
+  URL: example.com
+  URL1: yahoo.com
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample04
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      envFrom:
+        - configMapRef:
+          name: config1    
+
