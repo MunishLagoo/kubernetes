@@ -28,5 +28,5 @@ spec:
       image: nginx
       envFrom:
         - configMapRef:
-          name: config1    
+            name: config1    
 
