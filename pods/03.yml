@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample03 
+spec:
+ - name: nginx01
+   image: nginx
+   env:
+     - name: URL
+       value: example.com
