@@ -3,8 +3,9 @@ kind: Pod
 metadata:
   name: sample03 
 spec:
- - name: nginx01
-   image: nginx
-   env:
-     - name: URL
-       value: example.com
+  containers:
+   - name: nginx01
+     image: nginx
+     env:
+      - name: URL
+        value: example.com
