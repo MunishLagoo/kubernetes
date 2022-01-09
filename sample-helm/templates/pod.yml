@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: {{.Values.podInfo.name}}-{{.Values.podLabels.project}}
+  name: {{.Values.podLabels.project}}
 spec:
   containers:
     - name: {{.Values.podInfo.name}}
