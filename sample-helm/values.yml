@@ -80,3 +80,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+###
+podInfo:
+  name: nginx
+  image: nginx
+podLabels:
+  project: nginx  
