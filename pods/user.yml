@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pods
+metadata:
+  name: user
+spec:
+  containers:
+    - name: user
+      image: 608320470413.dkr.ecr.us-east-1.amazonaws.com/user:latest  
