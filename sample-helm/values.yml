@@ -83,6 +83,6 @@ affinity: {}
 ###
 podInfo:
   name: nginx
-  image: nginx
+  image: nginx:1.17
 podLabels:
   project: nginx  
